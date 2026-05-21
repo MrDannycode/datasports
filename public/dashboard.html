@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athlete Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header / Navigation -->
+        <header class="header-box">
+            <div class="logo">
+                <strong>DataSports</strong>
+            </div>
+            <nav class="nav-links">
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">Activities</a>
+                <a href="#">Statistics</a>
+                <a href="#">Settings</a>
+            </nav>
+            <div class="user-info">
+                Logged in as <strong>Alex Runner</strong> | <a href="#">Logout</a>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <div class="page-title">
+                <h1>Dashboard overview</h1>
+            </div>
+
+            <!-- Key Metrics -->
+            <div class="metrics-container">
+                <div class="box metric-box">
+                    <div class="metric-title">Weekly Distance</div>
+                    <div class="metric-value">42.5 km</div>
+                </div>
+                <div class="box metric-box">
+                    <div class="metric-title">Active Time</div>
+                    <div class="metric-value">4h 15m</div>
+                </div>
+                <div class="box metric-box">
+                    <div class="metric-title">Calories</div>
+                    <div class="metric-value">3,240 kcal</div>
+                </div>
+                <div class="box metric-box">
+                    <div class="metric-title">VO2 Max Est.</div>
+                    <div class="metric-value">54.2</div>
+                </div>
+            </div>
+
+            <!-- Main Panels -->
+            <div class="panels-container">
+                <!-- Recent Activities -->
+                <div class="box activities-box">
+                    <div class="box-header">
+                        <h2>Recent Activities</h2>
+                        <a href="#">View All</a>
+                    </div>
+                    <div class="box-content">
+                        <table class="simple-table">
+                            <thead>
+                                <tr>
+                                    <th>Date</th>
+                                    <th>Type</th>
+                                    <th>Title</th>
+                                    <th>Distance</th>
+                                    <th>Duration</th>
+                                    <th>Pace/Speed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Today</td>
+                                    <td>Run</td>
+                                    <td>Morning Tempo Run</td>
+                                    <td>10.0 km</td>
+                                    <td>45:00</td>
+                                    <td>4:30 /km</td>
+                                </tr>
+                                <tr>
+                                    <td>Yesterday</td>
+                                    <td>Bike</td>
+                                    <td>Recovery Ride</td>
+                                    <td>25.4 km</td>
+                                    <td>1:08:52</td>
+                                    <td>22.1 km/h</td>
+                                </tr>
+                                <tr>
+                                    <td>Wed</td>
+                                    <td>Run</td>
+                                    <td>Long Interval Session</td>
+                                    <td>15.2 km</td>
+                                    <td>1:12:15</td>
+                                    <td>4:45 /km</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Goals & Status -->
+                <div class="sidebar-panels">
+                    <div class="box goal-box">
+                        <div class="box-header">
+                            <h2>Weekly Goal</h2>
+                        </div>
+                        <div class="box-content">
+                            <p><strong>Target:</strong> 50.0 km Run</p>
+                            <div class="simple-progress-bar">
+                                <div class="progress-fill" style="width: 85%;"></div>
+                            </div>
+                            <p class="progress-text">42.5 km completed (7.5 km left)</p>
+                        </div>
+                    </div>
+
+                    <div class="box training-box">
+                        <div class="box-header">
+                            <h2>Training Load</h2>
+                        </div>
+                        <div class="box-content">
+                            <ul class="simple-list">
+                                <li><strong>Mon:</strong> 45 min Run</li>
+                                <li><strong>Tue:</strong> 1h Bike</li>
+                                <li><strong>Wed:</strong> 1h 12m Run</li>
+                                <li><strong>Thu:</strong> Rest</li>
+                                <li><strong>Fri:</strong> -</li>
+                                <li><strong>Sat:</strong> -</li>
+                                <li><strong>Sun:</strong> -</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
